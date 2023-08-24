@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./project7.css">
+    <title>Pccoe Tech Surey form</title>
+    <style> 
+        
+    </style>
+</head>
+<body> 
+    <div class="main-container"> 
+         <div class="First-container"> 
+              <h1>PCCOE Tech Survey</h1>
+         </div> 
+         <div class="container" id="container-second"> 
+            <form> 
+                  <p class="paragraph">1.Name  <input type="text" name="name"  class="input" required></p> 
+                  <p class="paragraph">2.E-mail  <input type="email" name="email" class="input" required></p> 
+                  <button class="button" type="button" onclick="next_page()">Next</button>     
+            </form>
+            <p id="next"><span class="next-button">1</span><span class="next-notbutton">2</span></p>
+         </div>
+        <div class="container third" id="container-third">
+            <form onsubmit="save_page()">
+           <p class="paragraph">3.What are you Currently doing ?</p> 
+           <p class="radio-button"><span class="radio"><input type="radio" name="select" id="1" required>Teaching</span><span class="radio"><input  name="select" id="2" type="radio" required>Student</span><span class="radio"><input   name="select" id="3"type="radio" required>Programmer</span><span class="radio"> <input   name="select" id="4"type="radio" required>Other</span></p> 
+           <input class="input name" type="text" placeholder="Type here if not listed"> 
+           <p class="paragraph">4.Please Rate Out Course</p>
+           <p class="radio-button"><span class="radio"><input type="radio" name="select1" id="1" required>Poor</span><span class="radio"><input  name="select1" id="2" type="radio" required>Good</span><span class="radio"><input name="select1" id="3"type="radio" required>Excellent</span></p>
+           <p class="paragraph">5.Write your review here.</p>  
+           <textarea id="w3review" name="w3review" rows="4" cols="50" required>
+            </textarea> 
+            <br/>
+           <button type="submit" class='button' id="submit">Save</button>
+           <button type="button" class='button' id="preview" onclick="pre_page()">Previous</button>
+            <p id="next"><span class="next-notbutton">1</span><span class="next-button">2</span></p>
+           </form>
+        </div>
+        </div>
+        </div>
+    </div>
+</body> 
+<script src="./project7.js"></script>
+</html>
